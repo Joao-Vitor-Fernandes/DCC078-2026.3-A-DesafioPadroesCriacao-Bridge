@@ -6,7 +6,7 @@ public class PassagemFactory {
         Class classe = null;
         Object objeto = null;
         try {
-            classe = Class.forName("padroesintegracao.bridge.Passagem" + passagem);
+            classe = Class.forName("padroescriacao.integracaobridge.Passagem" + passagem);
             objeto = classe.getDeclaredConstructor().newInstance();
         } catch (Exception ex) {
             throw new IllegalArgumentException("Passagem inexistente");
